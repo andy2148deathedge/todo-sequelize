@@ -1,0 +1,33 @@
+{
+  "name": "todo-sequelize",
+  "version": "1.0.0",
+  "description": "AC todolist project remake by MySql and ORM Sequelize mod",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andy2148deathedge/todo-sequelize.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andy2148deathedge/todo-sequelize/issues"
+  },
+  "homepage": "https://github.com/andy2148deathedge/todo-sequelize#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "express-session": "^1.17.2",
+    "method-override": "^3.0.0",
+    "nodemon": "^2.0.14",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0"
+  }
+}
