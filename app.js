@@ -17,7 +17,12 @@ app.use(methodOverride('_method'))
 
 // routing
 app.get('/', (req, res) => {
-  res.send('Mysql TODO')
+  return Todo.findAll({
+    raw: true,
+    nest: true
+  })
+    .then((todos) => { return res.render('index', { todos: todos }) })
+    .catch((error) => { return res.status(422).json(error) })
 })
 
 app.get('/users/login', (req, res) => {
